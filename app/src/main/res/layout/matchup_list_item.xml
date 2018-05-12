@@ -9,7 +9,7 @@
     <ru.romananchugov.bizhack.views.TeamView
         android:id="@+id/item_home_team"
         android:layout_width="0dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:layout_weight="1"
         />
     <RelativeLayout
@@ -29,14 +29,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/score"
-            android:textColor="@android:color/white"
             android:layout_centerInParent="true"/>
         <TextView
             android:id="@+id/item_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/item_score"
-            android:textColor="@android:color/white"
+            android:gravity="center"
             tools:text="date"
             android:layout_centerHorizontal="true"/>
 
@@ -45,7 +44,7 @@
     <ru.romananchugov.bizhack.views.TeamView
         android:id="@+id/item_away_team"
         android:layout_width="0dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:layout_weight="1"/>
 
 

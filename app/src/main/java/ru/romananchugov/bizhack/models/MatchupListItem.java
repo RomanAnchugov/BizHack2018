@@ -14,14 +14,19 @@ public class MatchupListItem {
     @SerializedName("Location")
     public String location;
     @SerializedName("Team_Away")
-    public String teamAwayName;
+    public Team teamAway;
     @SerializedName("Team_Away_Score")
     public String teamAwayScore;
     @SerializedName("Team_Home")
-    public String teamHomeName;
+    public Team teamHome;
     @SerializedName("Team_Home_Score")
     public String teamHomeScore;
+    @SerializedName("CurrentQuarter")
+    public String quater;
 
+    public String getQuater() {
+        return quater;
+    }
 
     public String getDate() {
         return date;
@@ -35,16 +40,16 @@ public class MatchupListItem {
         return location;
     }
 
-    public String getTeamAwayName() {
-        return teamAwayName;
+    public Team getTeamAway() {
+        return teamAway;
     }
 
     public String getTeamAwayScore() {
         return teamAwayScore;
     }
 
-    public String getTeamHomeName() {
-        return teamHomeName;
+    public Team getTeamHome() {
+        return teamHome;
     }
 
     public String getTeamHomeScore() {
