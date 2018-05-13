@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/football_sport_button"
+                style="@style/SportButton"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/football_icon"
+                />
+
+            <ImageButton
+                style="@style/SportButton"
+                android:src="@drawable/cyber_icon"
+                />
+            <ImageButton
+                style="@style/SportButton"
+                android:src="@drawable/basketball_icon"
+                />
+            <ImageButton
+                style="@style/SportButton"
+                android:src="@drawable/hockey_icon"
+                />
+            <ImageButton
+                style="@style/SportButton"
+                android:src="@drawable/tennis_icon"
+                />
+            <ImageButton
+                style="@style/SportButton"
+                android:src="@drawable/kurl_icon"/>
+            <ImageButton
+                style="@style/SportButton"
+                android:src="@drawable/boxing_icon"/>
+            <ImageButton
+                style="@style/SportButton"
+                android:src="@drawable/volley_icon"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

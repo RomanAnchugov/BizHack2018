@@ -2,8 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/date_picker"
-        android:title="@string/date_picker"
-        android:icon="@drawable/ic_date_picker"
-        app:showAsAction="always"/>
+    <item
+        android:title="@string/account"
+        android:id="@+id/account_menu_item"
+        android:icon="@drawable/ic_account"
+        android:showAsAction="always"/>
+    <item android:id="@+id/search_menu_item"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        android:showAsAction="ifRoom"/>
+
+
 </menu>
