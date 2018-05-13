@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 /**
  * Created by romananchugov on 13.05.2018.
@@ -17,6 +18,7 @@ public class StarterFragment extends Fragment {
 
     private ImageButton footballBtn;
     private MainActivity activity;
+    private LinearLayout linearLayout;
 
     public StarterFragment(MainActivity activity){
         this.activity = activity;
@@ -26,8 +28,9 @@ public class StarterFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.starter_fragment, container, false);
-        footballBtn = v.findViewById(R.id.football_sport_button);
-        footballBtn.setOnClickListener(new View.OnClickListener() {
+
+        linearLayout = v.findViewById(R.id.starter_scroll);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 activity.addFragment(new TournamentDetails(activity));

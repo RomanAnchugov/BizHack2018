@@ -2,4 +2,6 @@
     <string name="app_name">FanSector</string>
     <string name="account">account</string>
     <string name="search">search</string>
+    <string name="lenta">Лента</string>
+    <string name="events">События</string>
 </resources>
